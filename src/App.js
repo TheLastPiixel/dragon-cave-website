@@ -3,7 +3,10 @@ import './App.css';
 import NavigationBar from './Components/NavigationBar';
 import Carousel from './HomePage/PictureSlides';
 import ItemCard from './Components/ItemCard';
+import MidSection from './HomePage/MidSection';
+import HL from './Components/HL';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import CardDeck from 'react-bootstrap/CardDeck';
 
 //npx crcf src/components/Button Input
 
@@ -12,16 +15,30 @@ function App() {
     <div className="App">
       <NavigationBar />
       <Carousel />
+      <HL />
+      <MidSection />
+      <HL />
       <div class="row">
         <div class="col-md-2" />
-        <div class="col-md-8">
-          <hr class="HLine"/>
-          <h1>We love collecting too!</h1>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-          </p>
-          <hr class="HLine"/>
+        <div class="col-md-8" >
+
+
+
+
           <h1>New Arrivals</h1>
+          <CardDeck>
+            <ItemCard Item="1964 Tissot Pocket Watch"/>
+            <ItemCard Item="Test"/>
+            <ItemCard Item="1964 Tissot Pocket Watch"/>
+            <ItemCard Item="1964 Tissot Pocket Watch"/>
+          </CardDeck>
+          <br/>
+          <CardDeck>
+            <ItemCard Item="1964 Tissot Pocket Watch"/>
+            <ItemCard Item="Test"/>
+            <ItemCard Item="1964 Tissot Pocket Watch"/>
+            <ItemCard Item="1964 Tissot Pocket Watch"/>
+          </CardDeck>
         </div>
         <div class="col-md-2" />
       </div>

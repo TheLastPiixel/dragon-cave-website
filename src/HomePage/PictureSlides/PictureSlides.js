@@ -10,7 +10,7 @@ class PictureSlides extends Component {
         <div class="col-md-2" />
         <div class="col-md-8">
           <br />
-          <Carousel class="slides">
+          <Carousel>
             <Carousel.Item>
               <img
                 src={Image1}

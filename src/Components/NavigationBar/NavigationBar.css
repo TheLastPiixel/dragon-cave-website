@@ -1,0 +1,8 @@
+#NavigationTitle {
+    align-items: center;
+    display: flex;
+}
+
+.NavBarTitle {
+    font-size: 24px;
+}

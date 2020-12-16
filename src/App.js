@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import NavigationBar from './Components/NavigationBar';
+import Footer from './Components/Footer';
 import Carousel from './HomePage/PictureSlides';
 import ItemCard from './Components/ItemCard';
 import MidSection from './HomePage/MidSection';
@@ -21,10 +22,6 @@ function App() {
       <div class="row">
         <div class="col-md-2" />
         <div class="col-md-8" >
-
-
-
-
           <h1>New Arrivals</h1>
           <CardDeck>
             <ItemCard Item="1964 Tissot Pocket Watch"/>
@@ -42,7 +39,8 @@ function App() {
         </div>
         <div class="col-md-2" />
       </div>
-
+      <br />
+      <Footer />
     </div>
   );
 }

@@ -1,0 +1,19 @@
+#Footer {
+    margin-top: 100px;
+}
+
+.Copyright {
+    margin: auto;
+    align-items: center;
+    display: flex;
+}
+
+.SocialMediaButton {
+    max-width: 32px;
+    height: auto;
+    margin: 5px;
+}
+
+.SocialMediaButton:hover {
+    opacity: 50%;
+}

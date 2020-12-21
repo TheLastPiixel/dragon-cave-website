@@ -1,19 +1,36 @@
 #Footer {
-    margin-top: 100px;
+    margin-top: 50px;
 }
 
 .Copyright {
     margin: auto;
     align-items: center;
     display: flex;
+    vertical-align: middle;
+}
+
+.SocialMediaDiv {
+    margin: auto;
+    align-items: center;
+    vertical-align: middle;
 }
 
 .SocialMediaButton {
-    max-width: 32px;
-    height: auto;
     margin: 5px;
+    align-items: center;
+    vertical-align: middle;
+    top: 50%;
 }
 
 .SocialMediaButton:hover {
     opacity: 50%;
+}
+
+.SocialMediaImage {
+    height: auto;
+    max-width: 32px;
+}
+
+.CopyrightText {
+    margin: 0px;
 }

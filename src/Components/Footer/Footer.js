@@ -13,33 +13,30 @@ class Footer extends Component {
         <Card.Footer id="Footer">
           <div class="row">
             <div class="col-md-4"> 
-              <h1>| Links</h1>
               <h2>Home</h2>
               <h2>About</h2>
               <h2>Contact</h2>
             </div>
-            <div class="col-md-4" />
-            <div class="col-md-4"> 
-              <h1>| Follow Us!</h1>
-              <a href="https://www.facebook.com/Dragon-Cave-107730614461276" target="_blank">
-                <img src={FacebookIcon} class="SocialMediaButton"/>
-              </a>
-              <a href="https://www.facebook.com/Dragon-Cave-107730614461276" target="_blank">
-                <img src={InstagramIcon} class="SocialMediaButton"/>
-              </a>
-              <a href="https://www.facebook.com/Dragon-Cave-107730614461276" target="_blank">
-                <img src={TwitterIcon} class="SocialMediaButton"/>
-              </a>
-              <a href="http://m.me/Dragon-Cave-107730614461276" target="_blank">
-                <img src={WhatsAppIcon} class="SocialMediaButton"/>
-              </a>
+            <div class="col-md-4 Copyright">
+              <div>
+                <p class="CopyrightText">Copyright © 2020 Palazzo Versace Venture Sdn Bhd</p>
+                <p class="CopyrightText">All Rights Reserved</p>
+                <p class="CopyrightText">Designed By: Flux Studios</p>
+              </div>
             </div>
-          </div>
-          <hr />
-          <div class="row">
-            <a class="btn-floating btn-tw" type="button" role="button"><i class="fab fa-twitter"></i></a>
-            <div class="Copyright">
-              <p>Copyright © 2020 Palazzo Versace Venture Sdn Bhd · All Rights Reserved · Designed By: Flux Studios</p>
+            <div class="col-md-4 SocialMediaDiv"> 
+              <a href="https://www.facebook.com/Dragon-Cave-107730614461276" target="_blank"  class="SocialMediaButton">
+                <img src={FacebookIcon} class="SocialMediaImage"/>
+              </a>
+              <a href="https://www.facebook.com/Dragon-Cave-107730614461276" target="_blank" class="SocialMediaButton">
+                <img src={InstagramIcon} class="SocialMediaImage"/>
+              </a>
+              <a href="https://www.facebook.com/Dragon-Cave-107730614461276" target="_blank" class="SocialMediaButton">
+                <img src={TwitterIcon} class="SocialMediaImage"/>
+              </a>
+              <a href="http://m.me/Dragon-Cave-107730614461276" target="_blank" class="SocialMediaButton">
+                <img src={WhatsAppIcon} class="SocialMediaImage"/>
+              </a>
             </div>
           </div>
         </Card.Footer>

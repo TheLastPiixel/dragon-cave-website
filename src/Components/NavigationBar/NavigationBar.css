@@ -1,3 +1,7 @@
+.NavBar {
+    margin: 0px;
+}
+
 #NavigationTitle {
     align-items: center;
     display: flex;

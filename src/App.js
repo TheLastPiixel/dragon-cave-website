@@ -3,11 +3,12 @@ import './App.css';
 import NavigationBar from './Components/NavigationBar';
 import Footer from './Components/Footer';
 import Carousel from './HomePage/PictureSlides';
-import ItemCard from './Components/ItemCard';
 import MidSection from './HomePage/MidSection';
 import HL from './Components/HL';
+import NewArrivals from './HomePage/NewArrivals';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import CardDeck from 'react-bootstrap/CardDeck';
+import {BrowserRouter as Router, Route, Link, Switch} from 'react-router-dom'; 
+
 
 //npx crcf src/components/Button Input
 
@@ -18,28 +19,23 @@ function App() {
       <Carousel />
       <HL />
       <MidSection />
-      <HL />
-      <div class="row">
-        <div class="col-md-2" />
-        <div class="col-md-8" >
-          <h1>New Arrivals</h1>
-          <CardDeck>
-            <ItemCard Item="1964 Tissot Pocket Watch"/>
-            <ItemCard Item="Test"/>
-            <ItemCard Item="1964 Tissot Pocket Watch"/>
-            <ItemCard Item="1964 Tissot Pocket Watch"/>
-          </CardDeck>
-          <br/>
-          <CardDeck>
-            <ItemCard Item="1964 Tissot Pocket Watch"/>
-            <ItemCard Item="Test"/>
-            <ItemCard Item="1964 Tissot Pocket Watch"/>
-            <ItemCard Item="1964 Tissot Pocket Watch"/>
-          </CardDeck>
+      <Router>
+        <div className="App">
+          <ul> 
+            <li> 
+              <Link to="/">Home</Link> 
+            </li> 
+            <li> 
+              <Link to="/About">About Us</Link> 
+            </li> 
+            <li> 
+              <Link to="/contact">Contact Us</Link> 
+            </li> 
+          </ul> 
         </div>
-        <div class="col-md-2" />
-      </div>
-      <br />
+      </Router>
+      <HL />
+      <NewArrivals />
       <Footer />
     </div>
   );

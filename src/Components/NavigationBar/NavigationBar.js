@@ -3,6 +3,7 @@ import './NavigationBar.css';
 import template from "./NavigationBar.js";
 import {Navbar, Nav, NavItem, NavDropdown, MenuItem} from 'react-bootstrap';
 import DragonCaveLogo from "./dragoncavelogo.jpg";
+import {BrowserRouter as Router, Route, Link, Switch} from 'react-router-dom'; 
 
 class NavBar extends React.Component {
   render() {
@@ -16,9 +17,15 @@ class NavBar extends React.Component {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="mr-auto">
-            <Nav.Link href="#home">Home</Nav.Link>
-            <Nav.Link href="#link">About</Nav.Link>
-            <Nav.Link href="#link">Contact Us</Nav.Link>
+            <Router>
+              <Nav.Link href="/">Home</Nav.Link>
+              <Nav.Link>
+                <Link to="../../Pages/AboutPage">
+                  About
+                </Link>
+              </Nav.Link>
+              <Nav.Link href="#link">Contact Us</Nav.Link>
+            </Router>
           </Nav>
         </Navbar.Collapse>
       </Navbar>

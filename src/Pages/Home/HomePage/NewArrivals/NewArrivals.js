@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import CardDeck from 'react-bootstrap/CardDeck';
-import ItemCard from '../../Components/ItemCard';
+import ItemCard from '../../../../Components/ItemCard';
 
 class NewArrivals extends Component {
   render() {

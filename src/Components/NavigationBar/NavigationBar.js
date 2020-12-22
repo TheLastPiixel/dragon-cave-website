@@ -12,7 +12,7 @@ class NavBar extends React.Component {
     return(
       <Router>
         <Navbar bg="light" expand="xl" expanded="true">
-          <Navbar.Brand href="#home">
+          <Navbar.Brand href="/">
             <img alt="Dragon Cave Logo" src={DragonCaveLogo} width="60" height="60" className="d-inline-block align-top" class="NavigationTitle"/>
             {' '}
             <b class="NavBarTitle">Dragon Cave</b>

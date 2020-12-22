@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import Carousel from './HomePage/PictureSlides';
-import MidSection from './HomePage/MidSection';
+import Carousel from './HomePageComponents/PictureSlides';
+import MidSection from './HomePageComponents/MidSection';
 import HL from '../../Components/HL';
-import NewArrivals from './HomePage/NewArrivals';
+import NewArrivals from './HomePageComponents/NewArrivals';
 
 class Home extends Component {
   render() {

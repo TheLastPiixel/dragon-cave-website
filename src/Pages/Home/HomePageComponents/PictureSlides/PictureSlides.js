@@ -6,8 +6,6 @@ import Image1 from "./test.jpg";
 class PictureSlides extends Component {
   render() {
     return (
-      <div class="row">
-        <div class="col-md-2" />
         <div class="col-md-8 PictureSlide">
           <br />
           <Carousel>
@@ -23,7 +21,6 @@ class PictureSlides extends Component {
             </Carousel.Item>
           </Carousel>
         </div>
-      </div>
     );
   }
 }

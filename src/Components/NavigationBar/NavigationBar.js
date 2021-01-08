@@ -1,7 +1,7 @@
 import React from "react";
 import './NavigationBar.css';
-import {Navbar, Nav, NavItem, NavDropdown, MenuItem} from 'react-bootstrap';
-import DragonCaveLogo from "./dragoncavelogo.jpg";
+import {Navbar, Nav} from 'react-bootstrap';
+import DragonCaveLogo from "./dragoncavelogobanner.png";
 import {BrowserRouter as Router, Route, Link, Switch} from 'react-router-dom'; 
 import Home from '../../Pages/Home'; 
 import About from '../../Pages/About'; 
@@ -12,10 +12,10 @@ class NavBar extends React.Component {
     return(
       <Router>
         <Navbar bg="light" expand="xl" expanded="true">
+          <div class="col-sm-2" />
           <Navbar.Brand href="/">
-            <img alt="Dragon Cave Logo" src={DragonCaveLogo} width="60" height="60" className="d-inline-block align-top" class="NavigationTitle"/>
-            {' '}
-            <b class="NavBarTitle">Dragon Cave</b>
+            <img alt="Dragon Cave Logo" src={DragonCaveLogo} width="auto" height="60" className="d-inline-block align-top" class="NavigationTitle"/>
+            {'  '}
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">

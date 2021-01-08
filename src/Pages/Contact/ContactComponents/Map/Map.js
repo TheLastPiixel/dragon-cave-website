@@ -11,8 +11,8 @@ const mapContainerStyle = {
   height: "50vh",
 };
 const location = {
-  lat: 3.109131964053435, 
-  lng: 101.63709308941017,
+  lat: 3.1260633630959784,
+  lng: 101.63728769898198,
 };
 const options = {
   styles: MapStyle,
@@ -35,7 +35,7 @@ export default function Map() {
       center={location}
       options={options}
       >
-        <Marker position={location} />
+        <Marker position={location} options={{}}/>
       </GoogleMap>
     </div>
   );

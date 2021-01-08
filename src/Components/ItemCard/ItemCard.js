@@ -11,11 +11,11 @@ class ItemCard extends Component {
 
   render() {
     return (
-      <Card style={{ width: '18rem'}} class="Card">
+      <Card style={{ width: '18rem'}} class="Card" onHov>
         <Card.Img variant="top" src={PocketWatch} />
         <Card.Body>
           <Card.Title>{this.props.Item}</Card.Title>
-          <Button variant="primary">$529.00</Button>
+          <Button variant="primary">{this.props.Price}</Button>
         </Card.Body>
       </Card>
     );

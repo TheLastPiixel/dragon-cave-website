@@ -9,8 +9,8 @@ class NewArrivals extends Component {
         <div class="col-md-8 Body" >
           <h1>New Arrivals</h1>
           <CardDeck>
-            <ItemCard Item="1964 Tissot Pocket Watch"/>
-            <ItemCard Item="Test"/>
+            <ItemCard Item="1964 Tissot Pocket Watch" Price="790.00"/>
+            <ItemCard Item="Test" Price="Enquire"/>
             <ItemCard Item="1964 Tissot Pocket Watch"/>
             <ItemCard Item="1964 Tissot Pocket Watch"/>
           </CardDeck>

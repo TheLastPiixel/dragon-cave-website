@@ -10,6 +10,7 @@
     "@testing-library/user-event": "^12.2.1",
     "bootstrap": "^4.5.3",
     "create-react-component-folder": "^0.3.4",
+    "emailjs-com": "^2.6.4",
     "google-map-react": "^2.1.9",
     "react": "^17.0.1",
     "react-bootstrap": "^1.4.0",

@@ -7,7 +7,7 @@ import ContactForm from '../../Components/ContactForm'
 class Contact extends Component {
   render() {
     return (
-      <div class="row">
+      <div class="row" style={{margin: 0}}>
         <div class="col-sm-8 float-left" style={{margin: "0 auto", marginTop: "20px"}}>
           <Map />
         </div>

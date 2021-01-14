@@ -22,7 +22,7 @@ class Contact extends Component {
             46400 Petaling Jaya,
             Selangor,
             Malaysia</p>
-            <p class="Text"><b>Open Hours:</b> Monday - Saturday (8am - 10pm)</p>
+            <p class="Text"><b>Open Hours:</b> Monday - Saturday (10:30am - 8:00pm)</p>
             <p class="Text"><b>Email:</b> <a href="mailto:dragoncave@gmail.com">dragoncave@gmail.com</a></p>
             <p class="Text"><b>Phone:</b> <a href="tel:+60124276181">+60 12 427 6181</a></p>
           </div>

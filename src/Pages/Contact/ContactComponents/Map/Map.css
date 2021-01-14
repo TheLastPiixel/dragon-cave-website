@@ -1,0 +1,19 @@
+.InfoWindow {
+    text-align: left;
+    align-items: left;
+}
+
+.InfoWindowButton {
+    width: 24px;
+    height: 24px;
+    margin: 10px;
+}
+
+.InfoWindowButton:hover {
+    opacity: 50%;
+}
+
+.InfoWindowButtonImage {
+    width: 24px;
+    height: 24px;
+}

@@ -1,10 +1,10 @@
 import './Footer.css';
 import React, { Component } from 'react';
 import {Card, Button} from 'react-bootstrap';
-import InstagramIcon from './instagram.svg';
-import FacebookIcon from './facebook.svg';
-import TwitterIcon from './twitter.svg';
-import WhatsAppIcon from './whatsapp.svg';
+import InstagramIcon from '../../Content/Icon/instagram.svg';
+import FacebookIcon from '../../Content/Icon/facebook.svg';
+import WhatsAppIcon from '../../Content/Icon/whatsapp.svg';
+import MessangerIcon from '../../Content/Icon/messanger.svg';
 
 class Footer extends Component {
   render() {
@@ -33,6 +33,9 @@ class Footer extends Component {
               </a>
               <a href="http://m.me/Dragon-Cave-107730614461276" target="_blank" class="SocialMediaButton">
                 <img src={WhatsAppIcon} class="SocialMediaImage"/>
+              </a>
+              <a href="https://m.me/Dragon-Cave-107730614461276" target="_blank" class="SocialMediaButton">
+                <img src={MessangerIcon} class="SocialMediaImage"/>
               </a>
             </div>
           </div>

@@ -4,7 +4,7 @@ import {GoogleMap, useLoadScript, Marker, InfoWindow} from "@react-google-maps/a
 import MapStyle from "./mapStyle";
 import PhoneIcon from "../../../../Content/Icon/PhoneBlue.png"
 import DirectionIcon from "../../../../Content/Icon/DirectionBlue.png"
-import DragonCave from "../../../../Content/Image/LocationMarker.png"
+import DragonCave from "../../../../Content/Icon/LocationMarker.png"
 
 require("dotenv").config();
 

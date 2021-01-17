@@ -11,7 +11,7 @@ class ItemCard extends Component {
 
   render() {
     return (
-      <Card style={{ width: '18rem'}} class="Card" onHov>
+      <Card style={{ width: '18rem'}} class="Card">
         <Card.Img variant="top" src={PocketWatch} />
         <Card.Body>
           <Card.Title>{this.props.Item}</Card.Title>

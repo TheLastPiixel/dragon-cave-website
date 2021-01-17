@@ -1,0 +1,8 @@
+.Text {
+    color: white;
+    border: none;
+}
+
+.Card:hover {
+    opacity: 50%;
+}

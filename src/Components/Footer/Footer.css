@@ -1,5 +1,7 @@
-#Footer {
-    margin-top: 50px;
+.Footer {
+    border: none;
+    background: #f8f9fa;
+    margin-top: 25px;
 }
 
 .Copyright {
@@ -32,4 +34,10 @@
 
 .CopyrightText {
     margin: 0px;
+}
+
+.Logo {
+    width: 100px;
+    height: auto;
+    margin: 10px
 }

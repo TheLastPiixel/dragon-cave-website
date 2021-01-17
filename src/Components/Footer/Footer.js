@@ -5,17 +5,16 @@ import InstagramIcon from '../../Content/Icon/instagram.svg';
 import FacebookIcon from '../../Content/Icon/facebook.svg';
 import WhatsAppIcon from '../../Content/Icon/whatsapp.svg';
 import MessangerIcon from '../../Content/Icon/messanger.svg';
+import DragonCaveIcon from '../../Content/Image/dragoncavelogo.png';
 
 class Footer extends Component {
   render() {
     return (
       <div>
-        <Card.Footer id="Footer">
+        <Card.Footer id="Footer" class="Footer" bg="light">
           <div class="row">
             <div class="col-md-4"> 
-              <h2>Home</h2>
-              <h2>About</h2>
-              <h2>Contact</h2>
+              <img src={DragonCaveIcon} alt="DragonCave" class="Logo" />
             </div>
             <div class="col-md-4 Copyright">
               <div>
@@ -31,7 +30,7 @@ class Footer extends Component {
               <a href="https://www.facebook.com/Dragon-Cave-107730614461276" target="_blank" class="SocialMediaButton">
                 <img src={InstagramIcon} class="SocialMediaImage"/>
               </a>
-              <a href="http://m.me/Dragon-Cave-107730614461276" target="_blank" class="SocialMediaButton">
+              <a href="https://wa.me/+60124276181" target="_blank" class="SocialMediaButton">
                 <img src={WhatsAppIcon} class="SocialMediaImage"/>
               </a>
               <a href="https://m.me/Dragon-Cave-107730614461276" target="_blank" class="SocialMediaButton">

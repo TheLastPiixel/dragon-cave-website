@@ -1,7 +1,6 @@
 import './StaffCard.css';
 import React, { useState } from 'react';
 import {Card} from 'react-bootstrap';
-import PlateSet from '../../../../Content/Image/plate-set.jpg';
 import Photo from './test.jpg';
 
 function StaffCard() {

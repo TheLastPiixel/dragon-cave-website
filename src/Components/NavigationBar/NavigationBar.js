@@ -2,7 +2,7 @@ import React from "react";
 import './NavigationBar.css';
 import {Navbar, Nav} from 'react-bootstrap';
 import DragonCaveLogo from "./dragoncavelogobanner.png";
-import {BrowserRouter as Router, Route, Link, Switch} from 'react-router-dom'; 
+import {BrowserRouter as Router, Route, Switch} from 'react-router-dom'; 
 import Home from '../../Pages/Home'; 
 import About from '../../Pages/About'; 
 import Contact from '../../Pages/Contact'; 

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {Form, Alert, Button, Row, Col} from 'react-bootstrap';
+import {Form, Button, Row, Col} from 'react-bootstrap';
 
 class ContactForm extends Component {
   constructor(props) {

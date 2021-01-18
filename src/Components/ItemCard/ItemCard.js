@@ -5,9 +5,6 @@ import {Card, Button} from 'react-bootstrap';
 import PocketWatch from './pocketwatch.jpeg';
 
 class ItemCard extends Component {
-  constructor(props) {
-    super(props);
-  }
 
   render() {
     return (

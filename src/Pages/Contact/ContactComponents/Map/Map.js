@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import './Map.css';
 import {GoogleMap, useLoadScript, Marker, InfoWindow} from "@react-google-maps/api";
 import MapStyle from "./mapStyle";
@@ -63,10 +63,10 @@ export default function Map() {
                 Malaysia
               </p>
               <a href="tel:+60124276181" class="InfoWindowButton">
-                <img src={PhoneIcon} class="InfoWindowButtonImage"/>
+                <img src={PhoneIcon} alt="phone" class="InfoWindowButtonImage"/>
               </a>
-              <a href="https://goo.gl/maps/m3GhgA7cNvPrTw7v8" class="InfoWindowButton" target="_blank">
-                <img src={DirectionIcon} class="InfoWindowButtonImage"/>
+              <a href="https://goo.gl/maps/m3GhgA7cNvPrTw7v8" class="InfoWindowButton" target="_blank" rel="noreferrer">
+                <img src={DirectionIcon} alt="direction" class="InfoWindowButtonImage"/>
               </a>
             </span>
           </InfoWindow>

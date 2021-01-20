@@ -1,17 +1,38 @@
-.Text {
+.CardDiv {
+    line-height: 0;
+}
+
+.CardContent {
     color: white;
     border: none;
-}
-
-.CardDiv {
     position: relative;
+    bottom: 0;
 }
 
-.Card:hover {
-    opacity: 50%;
+.card:hover .Overlay{
+    opacity: 1;
 }
 
-.Details {
+.OverlayDiv {
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.5); /* Black see-through */
+    transition: .5s;
+    color: #f1f1f1; 
+    font-size: 20px;
+    padding: 20px;
+    text-align: center;
+}
+
+.Text {
+    margin: 0;
+    font-size: 9pt;
+}
+
+.CardNameAndTitle {
     position: absolute;
     bottom: 0;
+    left: 0;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 15px;
 }

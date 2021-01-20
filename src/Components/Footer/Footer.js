@@ -11,8 +11,8 @@ class Footer extends Component {
   render() {
     return (
       <div>
-        <Card.Footer id="Footer" class="Footer" bg="light">
-          <div class="row">
+        <footer id="Footer" class="Footer" bg="light">
+          <div class="row" style={{width: "100vw", margin: "0px", padding: "0px"}}>
             <div class="col-md-4"> 
               <img src={DragonCaveIcon} alt="DragonCave" class="Logo" />
             </div>
@@ -38,7 +38,7 @@ class Footer extends Component {
               </a>
             </div>
           </div>
-        </Card.Footer>
+        </footer>
       </div>
     );
   }

@@ -16,7 +16,7 @@ function About () {
                 <p>To bring back the rich Peranakan heritage and culture, so that it will continue to be passed down to the generation to come.</p>
                 <hr />
                 <h1>Meet The Team</h1>
-                <img src={TeamPhoto} alt="team"/>
+                <img src={TeamPhoto} alt="team" width="100%"/>
                 <StaffCard />
             </div>
     )

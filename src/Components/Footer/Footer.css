@@ -1,11 +1,14 @@
 .Footer {
     border: none;
     background: #f8f9fa;
+    margin: 0px;
     margin-top: 25px;
+    padding: 0px;
 }
 
 .Copyright {
     margin: auto;
+    padding: 0px;
     align-items: center;
     vertical-align: middle;
 }
@@ -18,26 +21,34 @@
 
 .SocialMediaButton {
     margin: 5px;
+    padding: 0px;
     align-items: center;
     vertical-align: middle;
     top: 50%;
 }
 
 .SocialMediaButton:hover {
-    opacity: 50%;
+    opacity: 0.5;
+    transition: opacity .25s ease-in-out;
+    -moz-transition: opacity .25s ease-in-out;
+    -webkit-transition: opacity .25s ease-in-out;
 }
 
 .SocialMediaImage {
     height: auto;
     max-width: 32px;
+    margin: 0px;
+    padding: 0px;
 }
 
 .CopyrightText {
     margin: 0px;
+    padding: 0px;
 }
 
 .Logo {
     width: 100px;
     height: auto;
-    margin: 10px
+    margin: 10px;
+    padding: 0px;
 }

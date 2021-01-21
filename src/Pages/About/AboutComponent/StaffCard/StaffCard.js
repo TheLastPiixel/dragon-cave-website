@@ -1,35 +1,54 @@
 import './StaffCard.css';
-import React, { useState } from 'react';
+import React, { Component, useState } from 'react';
 import {Card} from 'react-bootstrap';
 import Photo from './test.jpg';
 
-function StaffCard() {
-    const [isShown, setIsShown] = useState(false);
+class StaffCard extends Component {
+  constructor(props) 
+  { 
+    super(props); 
+    this.handleMouseHover = this.handleMouseHover.bind(this);
+    this.state = {
+      isHovering: false,
+    };
+  } 
 
+  handleMouseHover() {
+    this.setState(this.toggleHoverState);
+  }
+
+  toggleHoverState(state) {
+    return {
+      isHovering: !state.isHovering,
+    };
+  }
+
+  render() {
     return (
       <Card 
       class="card bg-dark text-white CardDiv" 
       style={{ width: '15rem'}}  
-      onMouseEnter={() => setIsShown(true)} 
-      onMouseLeave={() => setIsShown(false)}
+      onMouseEnter={this.handleMouseHover} 
+      onMouseLeave={this.handleMouseHover} 
       >
         <Card.Img variant="top" src={Photo} alt="Item Image" />
-          {isShown && (
+          {this.state.isHovering && (
             <div class="card-img-overlay OverlayDiv">
               <p class="Text">
-                Born in PJ in 1998, Joseph moved to Auckland, New Zealand in 2005 and later got his Honors in Computer Systems Engineer where he graduated with Second Class, First Division honors. 
+                {this.props.bio}
               </p>
             </div>
           )}
-          <div class="Text card-img-overlay Details CardContent">
+          <div class="Text card-img-overlay CardContent">
             <div class="CardNameAndTitle">
-              <h4>Joseph Chua</h4>
-              <h7>Staff Member</h7>
+              <h4>{this.props.name}</h4>
+              <h7>{this.props.title}</h7>
             </div>
           </div>
       </Card>
     );
   }
+}
 
 
 export default StaffCard;

@@ -1,8 +1,6 @@
 import "./ItemCard.css";
 import React, { Component } from 'react';
 import {Card, Button} from 'react-bootstrap';
-//TEST
-import PocketWatch from './pocketwatch.jpeg';
 
 class ItemCard extends Component {
   constructor(props) 
@@ -31,8 +29,11 @@ class ItemCard extends Component {
         {this.state.isHovering && (
           <div class="card-img-overlay OverlayDiv">
             <p class="Text">
-              {this.props.bio}
+              {this.props.Description}
             </p>
+            <Button variant="success" style={{width: "60%", position: "absolute", bottom: "0", left: "0", textAlign: "center", marginBottom: "15px", marginLeft: "20%"}}>
+              Enquire
+            </Button>
           </div>
         )}
         <Card.Body class="CardBody">

@@ -5,14 +5,39 @@ import {Card, Button} from 'react-bootstrap';
 import PocketWatch from './pocketwatch.jpeg';
 
 class ItemCard extends Component {
+  constructor(props) 
+  { 
+    super(props); 
+    this.handleMouseHover = this.handleMouseHover.bind(this);
+    this.state = {
+      isHovering: false,
+    };
+  } 
+
+  handleMouseHover() {
+    this.setState(this.toggleHoverState);
+  }
+
+  toggleHoverState(state) {
+    return {
+      isHovering: !state.isHovering,
+    };
+  }
 
   render() {
     return (
-      <Card style={{ width: '18rem'}} class="Card">
-        <Card.Img variant="top" src={PocketWatch} />
-        <Card.Body>
-          <Card.Title>{this.props.Item}</Card.Title>
-          <Button variant="primary">{this.props.Price}</Button>
+      <Card border="0" class="card Card" style={{ width: '18rem'}} onMouseEnter={this.handleMouseHover} onMouseLeave={this.handleMouseHover} >
+        <Card.Img variant="top" src={'\\NewArrivals\\' + this.props.Location} className="img-fluid" alt="Card image" />
+        {this.state.isHovering && (
+          <div class="card-img-overlay OverlayDiv">
+            <p class="Text">
+              {this.props.bio}
+            </p>
+          </div>
+        )}
+        <Card.Body class="CardBody">
+          <Card.Title>{this.props.Price}</Card.Title>
+          <Card.Text>{this.props.Item}</Card.Text>
         </Card.Body>
       </Card>
     );

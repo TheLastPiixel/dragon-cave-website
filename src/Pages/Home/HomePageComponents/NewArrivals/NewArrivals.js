@@ -9,17 +9,17 @@ class NewArrivals extends Component {
         <div class="col-md-8 Body" >
           <h1>New Arrivals</h1>
           <CardDeck>
-            <ItemCard Item="1964 Tissot Pocket Watch" Price="790.00"/>
-            <ItemCard Item="Test" Price="Enquire"/>
-            <ItemCard Item="1964 Tissot Pocket Watch"/>
-            <ItemCard Item="1964 Tissot Pocket Watch"/>
+            <ItemCard Item="Antique Rustic Daybed Ironwood (Belian)" Price="RM8,800.00" Location="newarrival1.png"/>
+            <ItemCard Item="Antique Victorian Baby Carriage" Price="P.O.R" Location="newarrival2.png"/>
+            <ItemCard Item="Mother Of Pearl Long Bench" Price="P.O.R" Location="newarrival3.png"/>
+            <ItemCard Item="Mother Of Pearl Desk Set" Price="P.O.R" Location="newarrival4.png"/>
           </CardDeck>
           <br/>
           <CardDeck>
-            <ItemCard Item="1964 Tissot Pocket Watch"/>
-            <ItemCard Item="Test" class="ItemCard"/>
-            <ItemCard Item="1964 Tissot Pocket Watch"/>
-            <ItemCard Item="1964 Tissot Pocket Watch"/>
+            <ItemCard Item="Mother of Pearl Rectangular Side Table" Price="P.O.R" Location="newarrival5.png"/>
+            <ItemCard Item="Test" Price="$790,900.00"/>
+            <ItemCard Item="1964 Tissot Pocket Watch" Price="$5,400.00"/>
+            <ItemCard Item="1964 Tissot Pocket Watch" Price="$9,990.00"/>
           </CardDeck>
         </div>
     );

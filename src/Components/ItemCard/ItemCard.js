@@ -1,6 +1,7 @@
 import "./ItemCard.css";
 import React, { Component } from 'react';
-import {Card, Button} from 'react-bootstrap';
+import {Card} from 'react-bootstrap';
+import EnquireButton from '../EnquireModal';
 
 class ItemCard extends Component {
   constructor(props) 
@@ -31,9 +32,7 @@ class ItemCard extends Component {
             <p class="Text">
               {this.props.Description}
             </p>
-            <Button variant="success" style={{width: "60%", position: "absolute", bottom: "0", left: "0", textAlign: "center", marginBottom: "15px", marginLeft: "20%"}}>
-              Enquire
-            </Button>
+            <EnquireButton ItemName={this.props.Item}/>
           </div>
         )}
         <Card.Body class="CardBody">

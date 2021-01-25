@@ -6,6 +6,9 @@ class ContactForm extends Component {
     super(props);
       this.state = {Name: '', Phone: '', Email: '', Subject: '', Message: ''};
       //this.handleChange = this.handleChange.bind(this);
+      if (this.props.ItemName != undefined) {
+        this.state.Subject = 'Enquiry: ' + this.props.ItemName;
+      }
       this.handleNameChange = this.handleNameChange.bind(this);
       this.handlePhoneChange = this.handlePhoneChange.bind(this);
       this.handleEmailChange = this.handleEmailChange.bind(this);

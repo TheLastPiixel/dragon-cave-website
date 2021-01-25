@@ -24,10 +24,10 @@ class ItemCard extends Component {
 
   render() {
     return (
-      <Card border="0" class="card Card" style={{ width: '18rem'}} onMouseEnter={this.handleMouseHover} onMouseLeave={this.handleMouseHover} >
-        <Card.Img variant="top" src={'\\NewArrivals\\' + this.props.Location} className="img-fluid" alt="Card image" />
+      <Card border="0" class="CardStyle" style={{ width: 'auto'}} onMouseEnter={this.handleMouseHover} onMouseLeave={this.handleMouseHover} >
+        <Card.Img variant="top" src={'\\NewArrivals\\' + this.props.Location} className="img-fluid" alt="Card image" style={{ width: 'auto', height: '13.5rem', objectFit: 'cover'}}/>
         {this.state.isHovering && (
-          <div class="card-img-overlay OverlayDiv">
+          <div class="card-img-overlay CardOverlay">
             <p class="Text">
               {this.props.Description}
             </p>

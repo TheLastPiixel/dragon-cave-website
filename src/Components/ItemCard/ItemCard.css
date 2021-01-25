@@ -1,5 +1,4 @@
-.Card {
-    margin-left: 20px;
+.CardStyle {
     text-align: left;
 }
 
@@ -11,11 +10,12 @@
     opacity: 1;
 }
 
-.OverlayDiv {
+.CardOverlay {
     background: rgb(0, 0, 0);
     background: rgba(0, 0, 0, 0.5); /* Black see-through */
     transition: .5s;
     color: #f1f1f1; 
     font-size: 20px;
     padding: 20px;
+    height: 215px;
 }

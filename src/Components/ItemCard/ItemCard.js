@@ -7,32 +7,43 @@ class ItemCard extends Component {
   constructor(props) 
   { 
     super(props); 
-    this.handleMouseHover = this.handleMouseHover.bind(this);
+    this.handleIsHover = this.handleIsHover.bind(this);
+    this.handleNotHover = this.handleNotHover.bind(this);
     this.state = {
       isHovering: false,
     };
   } 
 
-  handleMouseHover() {
-    this.setState(this.toggleHoverState);
+  handleIsHover() {
+    this.setState(this.toggleHovering);
   }
 
-  toggleHoverState(state) {
+  toggleHovering(state) {
     return {
-      isHovering: !state.isHovering,
+      isHovering: true,
+    };
+  }
+
+  handleNotHover() {
+    this.setState(this.toggleNotHovering);
+  }
+
+  toggleNotHovering(state) {
+    return {
+      isHovering: false,
     };
   }
 
   render() {
     return (
-      <Card border="0" class="CardStyle" style={{ width: 'auto'}} onMouseEnter={this.handleMouseHover} onMouseLeave={this.handleMouseHover} >
+      <Card border="0" class="CardStyle" style={{ width: 'auto'}} onMouseEnter={this.handleIsHover} onMouseLeave={this.handleNotHover}>
         <Card.Img variant="top" src={'\\NewArrivals\\' + this.props.Location} className="img-fluid" alt="Card image" style={{ width: 'auto', height: '13.5rem', objectFit: 'cover'}}/>
         {this.state.isHovering && (
           <div class="card-img-overlay CardOverlay">
             <p class="Text">
               {this.props.Description}
             </p>
-            <EnquireButton ItemName={this.props.Item}/>
+            <EnquireButton ItemName={this.props.Item} onClick={this.handleMouseHover}/>
           </div>
         )}
         <Card.Body class="CardBody">

@@ -1,0 +1,9 @@
+.ButtonStyle {
+    width: "60%";
+    position: "absolute";
+    bottom: "0";
+    left: "0";
+    text-align: "center";
+    margin-bottom: "15px";
+    margin-left: "20%"
+}

@@ -12,7 +12,6 @@ const AnchorStyle = {
 }
 
 const DirectoryText = {
-  fontWeight: "bold",
   textAlign: "left",
   fontSize: "12pt",
   color: "#643f23",
@@ -25,13 +24,15 @@ class Footer extends Component {
       <div>
         <footer id="Footer" class="Footer" bg="light">
           <div class="row" style={{width: "100vw", margin: "0px", padding: "0px"}}>
-            <div class="col-md-2"> 
-                <img src={DragonCaveIcon} alt="DragonCave" class="Logo" />
-            </div>
-            <div class="col-md-2 SocialMediaDiv">
-              <a href="/" style={AnchorStyle}><p style={DirectoryText} className="DirectoryText">Home</p></a>
-              <a href="/about" style={AnchorStyle}><p style={DirectoryText} className="DirectoryText">About</p></a>
-              <a href="/contact" style={AnchorStyle}><p style={DirectoryText} className="DirectoryText">Contact Us</p></a>
+            <div class="col-md-4">
+              <div style={{width: "50%", float: "left"}}> 
+                  <img src={DragonCaveIcon} alt="DragonCave" class="Logo" />
+              </div>
+              <div class="SocialMediaDiv" style={{width: "50%", float: "right"}}>
+                <a href="/" style={AnchorStyle}><p style={DirectoryText} className="DirectoryText">Home</p></a>
+                <a href="/about" style={AnchorStyle}><p style={DirectoryText} className="DirectoryText">About</p></a>
+                <a href="/contact" style={AnchorStyle}><p style={DirectoryText} className="DirectoryText">Contact Us</p></a>
+              </div>
             </div>
             <div class="col-md-4 Copyright">
               <div>

@@ -1,11 +1,23 @@
 import './Footer.css';
 import React, { Component } from 'react';
-import {Card} from 'react-bootstrap';
 import InstagramIcon from '../../Content/Icon/instagram.svg';
 import FacebookIcon from '../../Content/Icon/facebook.svg';
 import WhatsAppIcon from '../../Content/Icon/whatsapp.svg';
 import MessangerIcon from '../../Content/Icon/messanger.svg';
 import DragonCaveIcon from '../../Content/Image/dragoncavelogo.png';
+
+const AnchorStyle = {
+  textDecoration: "none",
+  margin: "0px",
+}
+
+const DirectoryText = {
+  fontWeight: "bold",
+  textAlign: "left",
+  fontSize: "12pt",
+  color: "#643f23",
+  margin: "0px",
+};
 
 class Footer extends Component {
   render() {
@@ -13,8 +25,13 @@ class Footer extends Component {
       <div>
         <footer id="Footer" class="Footer" bg="light">
           <div class="row" style={{width: "100vw", margin: "0px", padding: "0px"}}>
-            <div class="col-md-4"> 
-              <img src={DragonCaveIcon} alt="DragonCave" class="Logo" />
+            <div class="col-md-2"> 
+                <img src={DragonCaveIcon} alt="DragonCave" class="Logo" />
+            </div>
+            <div class="col-md-2 SocialMediaDiv">
+              <a href="/" style={AnchorStyle}><p style={DirectoryText} className="DirectoryText">Home</p></a>
+              <a href="/about" style={AnchorStyle}><p style={DirectoryText} className="DirectoryText">About</p></a>
+              <a href="/contact" style={AnchorStyle}><p style={DirectoryText} className="DirectoryText">Contact Us</p></a>
             </div>
             <div class="col-md-4 Copyright">
               <div>

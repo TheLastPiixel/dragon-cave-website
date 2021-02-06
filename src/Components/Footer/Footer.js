@@ -23,9 +23,9 @@ class Footer extends Component {
     return (
       <div>
         <footer id="Footer" class="Footer" bg="light">
-          <div class="row" style={{width: "100vw", margin: "0px", padding: "0px"}}>
+          <div class="row" style={{padding: "0px", width: "100vw", margin: "0px"}}>
             <div class="col-md-4">
-              <div style={{width: "50%", float: "left"}}> 
+              <div style={{width: "50%", float: "left", padding: "0px"}}> 
                   <img src={DragonCaveIcon} alt="DragonCave" class="Logo" />
               </div>
               <div class="SocialMediaDiv" style={{width: "50%", float: "right"}}>
@@ -34,14 +34,14 @@ class Footer extends Component {
                 <a href="/contact" style={AnchorStyle}><p style={DirectoryText} className="DirectoryText">Contact Us</p></a>
               </div>
             </div>
-            <div class="col-md-4 Copyright">
+            <div class="col-md-4 Copyright" style={{padding: "0px"}}>
               <div>
                 <p class="CopyrightText">Copyright © 2020 Palazzo Versace Venture Sdn Bhd</p>
                 <p class="CopyrightText">All Rights Reserved</p>
                 <p class="CopyrightText">Designed By: Flux Studios</p>
               </div>
             </div>
-            <div class="col-md-4 SocialMediaDiv"> 
+            <div class="col-md-4 SocialMediaDiv" style={{padding: "0px"}}> 
               <a href="https://www.facebook.com/Dragon-Cave-107730614461276" alt="facebook" target="_blank" rel="noreferrer" class="SocialMediaButton">
                 <img src={FacebookIcon} alt="facebook" class="SocialMediaImage"/>
               </a>

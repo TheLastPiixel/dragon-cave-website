@@ -1,7 +1,6 @@
 import './StaffCard.css';
 import React, { Component, useState } from 'react';
 import {Card} from 'react-bootstrap';
-import Photo from './test.jpg';
 
 class StaffCard extends Component {
   constructor(props) 
@@ -31,18 +30,18 @@ class StaffCard extends Component {
       onMouseEnter={this.handleMouseHover} 
       onMouseLeave={this.handleMouseHover} 
       >
-        <Card.Img variant="top" src={Photo} alt="Item Image" />
+        <Card.Img variant="top" src={'\\StaffPhotos\\' + this.props.Location} alt="Item Image" />
           {this.state.isHovering && (
             <div class="card-img-overlay OverlayDiv">
               <p class="Text">
-                {this.props.bio}
+                {this.props.Bio}
               </p>
             </div>
           )}
           <div class="Text card-img-overlay CardContent">
             <div class="CardNameAndTitle">
-              <h4>{this.props.name}</h4>
-              <h7>{this.props.title}</h7>
+              <h4>{this.props.Name}</h4>
+              <h7>{this.props.Title}</h7>
             </div>
           </div>
       </Card>

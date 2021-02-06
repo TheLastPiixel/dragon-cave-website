@@ -8,7 +8,7 @@ class NewArrivals extends Component {
     return (
         <div class="col-md-8 Body" >
           <h1>New Arrivals</h1>
-          <CardDeck style={{alignItems: 'center'}}>
+          <CardDeck>
             <ItemCard Item="Antique Rustic Daybed Ironwood (Belian)" Price="RM8,800.00" Location="newarrival1.png" Description={'Dimensions: 77.5\"L x 36\"W x 35.5\"H'}/>
             <ItemCard Item="Antique Victorian Baby Carriage" Price="P.O.R" Location="newarrival2.png"/>
             <ItemCard Item="Mother Of Pearl Long Bench" Price="P.O.R" Location="newarrival3.png"/>

@@ -26,7 +26,7 @@ class StaffCard extends Component {
     return (
       <Card 
       class="card bg-dark text-white CardDiv" 
-      style={{ width: '15rem'}}  
+      style={{ width: 'auto'}}  
       onMouseEnter={this.handleMouseHover} 
       onMouseLeave={this.handleMouseHover} 
       >

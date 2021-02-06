@@ -41,7 +41,7 @@ class Footer extends Component {
                 <p class="CopyrightText">Designed By: Flux Studios</p>
               </div>
             </div>
-            <div class="col-md-4 SocialMediaDiv" style={{padding: "0px"}}> 
+            <div class="col-md-4 SocialMediaDiv" style={{padding: "20px"}}> 
               <a href="https://www.facebook.com/Dragon-Cave-107730614461276" alt="facebook" target="_blank" rel="noreferrer" class="SocialMediaButton">
                 <img src={FacebookIcon} alt="facebook" class="SocialMediaImage"/>
               </a>

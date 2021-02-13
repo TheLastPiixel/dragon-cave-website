@@ -41,7 +41,7 @@ class ContactForm extends Component {
 
   sendFeedback (templateId, variables) {
     window.emailjs.send(
-      'gmail', templateId,
+      'service_3gojgwb', templateId,
       variables
       ).then(res => {
         console.log('Email successfully sent!')

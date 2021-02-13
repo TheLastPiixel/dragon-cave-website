@@ -30,7 +30,7 @@ class EnquireModal extends Component {
           Enquire
         </Button>
         {this.state.isClicked && 
-          <Modal show={this.handleMouseClick} onHide={this.handleMouseClick} style={{ position: "fixed", top: '20vh', height: '60vh'}}>
+          <Modal show={this.handleMouseClick} onHide={this.handleMouseClick} style={{ position: "fixed", top: '15vh', height: '70vh'}}>
             <Modal.Header closeButton>
               <Modal.Title>Enquiry</Modal.Title>
             </Modal.Header>

@@ -23,7 +23,7 @@ class Contact extends Component {
             Selangor,
             Malaysia</p>
             <p><b>Open Hours:</b> Monday - Saturday (10:30am - 8:00pm)</p>
-            <p><b>Email:</b> <a href="mailto:dragoncave@gmail.com">dragoncave@gmail.com</a></p>
+            <p><b>Email:</b> <a href="mailto:dragoncavegallery@gmail.com">dragoncavegallery@gmail.com</a></p>
             <p><b>Phone:</b> <a href="tel:+60124276181">+60 12 427 6181</a></p>
           </div>
 

@@ -7,12 +7,16 @@ import Image3 from "../../../../Content/Image/pots.jpg";
 
 class PictureSlides extends Component {
   render() {
+    let image = new Image();
+    image.src = "\\FrontPage\\488.jpg";
+    console.log("The iamge source is: " + image.src);
+
     return (
         <div class="col-md-8 PictureSlide">
           <br />
           <Carousel>
             <Carousel.Item>
-              <img src={Image1} className="d-block w-100" alt="First slide"/>
+              <img src={image.src} className="d-block w-100" alt="First slide"/>
             </Carousel.Item>
             <Carousel.Item>
               <img src={Image2} className="d-block w-100" alt="Third slide"/>

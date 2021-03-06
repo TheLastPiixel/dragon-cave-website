@@ -45,7 +45,7 @@ class Footer extends Component {
               <a href="https://www.facebook.com/Dragon-Cave-107730614461276" alt="facebook" target="_blank" rel="noreferrer" class="SocialMediaButton">
                 <img src={FacebookIcon} alt="facebook" class="SocialMediaImage"/>
               </a>
-              <a href="https://www.facebook.com/Dragon-Cave-107730614461276" target="_blank" rel="noreferrer" class="SocialMediaButton">
+              <a href="https://www.instagram.com/dragoncavegallery/" target="_blank" rel="noreferrer" class="SocialMediaButton">
                 <img src={InstagramIcon} alt="instagram" class="SocialMediaImage"/>
               </a>
               <a href="https://wa.me/+60124276181" target="_blank" rel="noreferrer" class="SocialMediaButton">

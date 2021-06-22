@@ -23,25 +23,25 @@ function About () {
                     Name="Person 1" 
                     Title="Chief Executive Office" 
                     Location="avatar.png"
-                    Bio="This is a boi, it does what a boi does. You put bio stuff in here to make it look and sound like what a bio would look and sound like. You should insert your bio here"
+                    Bio="Test Bio 1"
                 />
                 <StaffCard
                     Name="Person 2" 
                     Title="Chief Financial Officer" 
                     Location="avatar.png"
-                    Bio="This is a boi, it does what a boi does. You put bio stuff in here to make it look and sound like what a bio would look and sound like. You should insert your bio here"
+                    Bio="Test Bio 2"
                 />
                 <StaffCard
                     Name="Person 3" 
                     Title="Chief Marketing Officer" 
                     Location="avatar.png"
-                    Bio="This is a boi, it does what a boi does. You put bio stuff in here to make it look and sound like what a bio would look and sound like. You should insert your bio here"
+                    Bio="Test Bio 3"
                 />
                 <StaffCard
                     Name="Person 4" 
                     Title="Chief Operation Officer" 
                     Location="avatar.png"
-                    Bio="This is a boi, it does what a boi does. You put bio stuff in here to make it look and sound like what a bio would look and sound like. You should insert your bio here"
+                    Bio="Test Bio 4"
                 />
             </CardDeck>
         </div>
